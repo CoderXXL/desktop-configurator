@@ -11,4 +11,4 @@ roles:
   - geerlingguy.php-versions
   - gantsign.keyboard
   - robertdebock.locale
-  - petermosmans.customize-gnome
+  - geerlingguy.docker

@@ -30,8 +30,5 @@ default_system_packages:
 default_snaps:
   - "spotify"
   - "code"
-  - "intellij-idea-community"
   - "phpstorm"
-  - "datagrip"
-  - "goland"
   - "postman"
