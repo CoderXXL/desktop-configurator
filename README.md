@@ -1,13 +1,9 @@
 # Desktop Configurator
-This repository contains an Ansible Playbook, used to configure Ubuntu Desktop and Gnome with the LazyBytez theme and utilities.
+This repository contains an Ansible Playbook, used to configure Ubuntu Desktop.
 
 This playbook manages:
- - Gnome Theme & Icons
- - Dock
  - Installation of commonly used software
  - Configuration of commonly used software
-
-This playbook automatically applies the beautiful [Catppuccin Themes](https://github.com/catppuccin/catppuccin) where applicable!
 
 **NOTE:** This role changes your system language and keyboard layout to __German__!
 
@@ -17,7 +13,7 @@ You must at least install Ansible in version `2.10` to use this playbook!
 
 #### Quick install
 ```shell
-sudo apt update && sudo apt install software-properties-common && sudo add-apt-repository --yes --update ppa:ansible/ansible && sudo apt install -y ansible git && cd ~ && git clone https://github.com/lazybytez/desktop-configurator.git && cd desktop-configurator && ansible-galaxy install -r requirements.yaml && ansible-playbook -i inventory.yaml playbook.yaml -K
+sudo apt update && sudo apt install software-properties-common && sudo add-apt-repository --yes --update ppa:ansible/ansible && sudo apt install -y ansible git && cd ~ && git clone https://github.com/CoderXXL/desktop-configurator.git && cd desktop-configurator && ansible-galaxy install -r requirements.yaml && ansible-playbook -i inventory.yaml playbook.yaml -K
 ```
 
 #### Manual install

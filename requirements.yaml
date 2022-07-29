@@ -12,3 +12,4 @@ roles:
   - gantsign.keyboard
   - robertdebock.locale
   - geerlingguy.docker
+  - webarchitect609.google_chrome
