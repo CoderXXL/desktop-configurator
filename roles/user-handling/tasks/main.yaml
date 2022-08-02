@@ -1,0 +1,14 @@
+---
+#
+# Install the PSH shell if not already done
+#
+# Installation is only run if PSH is not cloned locally.
+#
+- name: Handling Users
+  become: false
+  tags: [ 'software', 'user-handling' ]
+- name: Creates Users
+  command: "./create.sh"
+  args:
+    chdir: "/home/{{ lookup('env', 'USER') }}/.desktop-configurator/user-handling"
+  tags: [ 'software', 'user-handling' ]

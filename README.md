@@ -13,7 +13,7 @@ You must at least install Ansible in version `2.10` to use this playbook!
 
 #### Quick install
 ```shell
-sudo apt update && sudo apt install software-properties-common && sudo add-apt-repository --yes --update ppa:ansible/ansible && sudo apt install -y ansible git && cd ~ && git clone https://github.com/CoderXXL/desktop-configurator.git && cd desktop-configurator && ansible-galaxy install -r requirements.yaml && ansible-playbook -i inventory.yaml playbook.yaml -K
+sudo apt update && sudo apt install software-properties-common && sudo add-apt-repository --yes --update ppa:ansible/ansible && sudo apt install -y ansible git && cd ~ && git clone https://github.com/CoderXXL/desktop-configurator.git ./.desktop-configurator && cd .desktop-configurator && ansible-galaxy install -r requirements.yaml && ansible-playbook -i inventory.yaml playbook.yaml -K
 ```
 
 #### Manual install
