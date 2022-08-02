@@ -1,0 +1,21 @@
+---
+#
+# Install the FLASH shell if not already done
+#
+# Installation is only run if FLASH is not cloned locally.
+#
+- name: Clone FLASH repository
+  become: false
+  git:
+    repo: https://github.com/CoderXXL/fla.sh.git
+    dest: "/home/{{ lookup('env', 'USER') }}/.lazybytez-theme/flash"
+    clone: true
+    update: true
+  register: psh_repository_result
+  tags: [ 'software', 'flash' ]
+- name: Install FLASH if necessary
+  command: "./install.sh --unattended"
+  args:
+    chdir: "/home/{{ lookup('env', 'USER') }}/.lazybytez-theme/flash"
+  when: psh_repository_result.changed
+  tags: [ 'software', 'flash' ]
