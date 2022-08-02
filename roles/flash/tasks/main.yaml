@@ -8,14 +8,14 @@
   become: false
   git:
     repo: https://github.com/CoderXXL/fla.sh.git
-    dest: "/home/{{ lookup('env', 'USER') }}/.lazybytez-theme/flash"
+    dest: "/home/{{ lookup('env', 'USER') }}/.flagbit-theme/flash"
     clone: true
     update: true
-  register: psh_repository_result
+  register: flash_repository_result
   tags: [ 'software', 'flash' ]
 - name: Install FLASH if necessary
   command: "./install.sh --unattended"
   args:
-    chdir: "/home/{{ lookup('env', 'USER') }}/.lazybytez-theme/flash"
-  when: psh_repository_result.changed
+    chdir: "/home/{{ lookup('env', 'USER') }}/.flagbit-theme/flash"
+  when: flash_repository_result.changed
   tags: [ 'software', 'flash' ]
