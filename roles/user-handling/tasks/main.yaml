@@ -1,8 +1,7 @@
 ---
 #
-# Install the PSH shell if not already done
+# Setup Users
 #
-# Installation is only run if PSH is not cloned locally.
 #
 - name: Handling Users
   command: "./create.sh"

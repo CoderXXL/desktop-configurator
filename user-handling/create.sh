@@ -1,1 +1,1 @@
-touch ~/testfile.sh
+touch ~/testfile
