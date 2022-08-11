@@ -7,6 +7,7 @@ default_system_packages:
   - "wget"
   - "git"
   - "sl"
+  - "jq"
   - "lolcat"
   - "gnupg-agent"
   - "htop"
